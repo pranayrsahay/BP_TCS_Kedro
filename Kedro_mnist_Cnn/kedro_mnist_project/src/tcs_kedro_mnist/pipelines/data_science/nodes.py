@@ -18,7 +18,7 @@ import os
 logger = logging.getLogger(__name__)
 
 # This function is responsible for building the model architecture and saves the uncompiled model at data/06_models in h5 format (Custom Keras dataset)
-def build_model(parameters: dict, x_train_normalized):
+def build_model(parameters: dict, x_train_normalized:np.ndarray):
     logger.info("Building Model")
     random_state = parameters["random_state"]
     filter_1 = parameters["filter_1"]
@@ -49,7 +49,7 @@ def build_model(parameters: dict, x_train_normalized):
     return model_1
 
 # This function compiles and trains the model and saves the best model based on the least validation loss
-def train_model(x_train_normalized: np.ndarray, y_train: np.ndarray, x_test_normalized: np.ndarray, y_test: np.ndarray, model_architecture:KerasHDF5Dataset, parameters: dict):
+def train_model(x_train_normalized: np.ndarray, y_train: np.ndarray, model_architecture:KerasHDF5Dataset, parameters: dict):
     logger.info("Training the model with Normalized data")
     epochs = parameters["epochs"]
     loss_function = parameters["loss_function"]
@@ -88,7 +88,7 @@ def log_test_results(x_test_normalized:np.ndarray, y_test:np.ndarray, best_train
     return predictions, test_acc, test_loss, report, cm
 
 # This function additionally generates a PDF format file with all the performance metrics and confusion matrix image 
-def generate_reports(y_test, predictions, test_acc, test_loss, report, cm):
+def generate_reports(y_test:np.ndarray, predictions, test_acc, test_loss, report, cm):
     logger.info("Generating custom report")
     plt.figure(figsize=(10, 8))
     labels = [str(i) for i in range(10)]
