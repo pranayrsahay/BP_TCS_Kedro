@@ -1,0 +1,43 @@
+# Here you can define all your datasets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+# Here you can define all your datasets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+x_train:
+  type: tcs_kedro_mnist.datasets.np_dataset.NumpyDataset
+  filepath: data/01_raw/x_train.npy
+
+y_train:
+  type: tcs_kedro_mnist.datasets.np_dataset.NumpyDataset
+  filepath: data/01_raw/y_train.npy
+
+x_test:
+  type: tcs_kedro_mnist.datasets.np_dataset.NumpyDataset
+  filepath: data/01_raw/x_test.npy
+
+y_test:
+  type: tcs_kedro_mnist.datasets.np_dataset.NumpyDataset
+  filepath: data/01_raw/y_test.npy
+
+x_train_normalized:
+  type: tcs_kedro_mnist.datasets.np_dataset.NumpyDataset
+  filepath: data/05_model_input/x_train_normalized.npy
+
+x_test_normalized:
+  type: tcs_kedro_mnist.datasets.np_dataset.NumpyDataset
+  filepath: data/03_primary/x_test_normalized.npy  
+
+model_architecture:
+  type: tcs_kedro_mnist.datasets.keras_hdf5_dataset.KerasHDF5Dataset
+  filepath: data\06_models\model_architecture.h5
+  version: true
+
+best_trained_model:
+  type: tcs_kedro_mnist.datasets.keras_hdf5_dataset.KerasHDF5Dataset
+  filepath: data\06_models\best_model.h5
+  version: true
+

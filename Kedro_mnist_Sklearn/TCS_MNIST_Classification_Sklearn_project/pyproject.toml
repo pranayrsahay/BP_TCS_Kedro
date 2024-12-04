@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+requires-python = ">=3.9"
+name = "mnistclassification"
+readme = "README.md"
+dynamic = [ "version",]
+dependencies = [ "kedro~=0.19.10", "scikit-learn==1.5.2", "kedro-datasets==5.1.0", "kedro-viz==10.1.0", "pandas==2.2.3", "notebook==7.2.2", "matplotlib==3.9.3", "seaborn==0.13.2", "ipython>=8.30.0", ]
+
+[project.scripts]
+mnistclassification = "mnistclassification.__main__:main"
+
+[project.optional-dependencies]
+docs = [ "docutils<0.21", "sphinx>=5.3,<=8.1.3", "sphinx_rtd_theme==2.0.0", "nbsphinx==0.8.1", "sphinx-autodoc-typehints==1.20.2", "sphinx_copybutton==0.5.2", "ipykernel>=5.3, <7.0", "Jinja2<3.2.0", "myst-parser>=1.0,<2.1",]
+
+[tool.kedro]
+package_name = "mnistclassification"
+project_name = "mnistclassification"
+kedro_init_version = "0.19.10"
+tools = "['Documentation', 'Data Structure']"
+example_pipeline = "False"
+source_dir = "src"
+
+[project.entry-points."kedro.hooks"]
+
+[tool.setuptools.dynamic.version]
+attr = "mnistclassification.__version__"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = false
+
+[tool.kedro_telemetry]
+project_id = "cb9c46a4989c44818cf89e8b07d0d68c"

@@ -1,0 +1,11 @@
+ipython>=8.10
+jupyterlab>=3.0
+notebook
+kedro~=0.19.10
+tensorflow~=2.8.0
+protobuf~=3.20.0
+fpdf~=1.7.2
+seaborn~=0.13.2
+scikit-learn~=1.5.2
+matplotlib~=3.9.2
+numpy~=1.26.4

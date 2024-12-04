@@ -1,0 +1,10 @@
+ipython>=8.10
+jupyterlab>=3.0
+kedro~=0.19.10
+notebook
+tensorflow~=2.8.0
+numpy~=1.26.4
+kedro~=0.19.10
+keras~=2.8.0
+matplotlib~=3.9.2
+scikit-learn~=1.5.2

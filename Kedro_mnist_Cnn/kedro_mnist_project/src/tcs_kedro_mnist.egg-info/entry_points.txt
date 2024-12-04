@@ -1,0 +1,2 @@
+[console_scripts]
+tcs-kedro-mnist = tcs_kedro_mnist.__main__:main

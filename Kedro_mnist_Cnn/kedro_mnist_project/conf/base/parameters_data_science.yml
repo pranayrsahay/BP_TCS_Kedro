@@ -1,0 +1,17 @@
+# This is a boilerplate parameters config generated for pipeline 'datascience'
+# using Kedro 0.19.10.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.10/configuration/parameters.html
+model_options:
+  filter_1: 32
+  filter_2: 64
+  filter_3: 64
+  dense_size: 64
+  kernel_size: [3, 3]
+  dropout_rate: 0.5
+  loss_function: "sparse_categorical_crossentropy"
+  epochs: 5
+  random_state: 48
+  optimizer: "adam"
+  activation: "relu"

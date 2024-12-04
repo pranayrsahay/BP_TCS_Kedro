@@ -1,0 +1,41 @@
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+requires-python = ">=3.9"
+name = "tcs_kedro_mnist"
+readme = "README.md"
+dynamic = [ "version",]
+dependencies = [ "ipython>=8.10", "jupyterlab>=3.0", "notebook", "kedro~=0.19.10",
+"tensorflow~=2.8.0",
+"protobuf~=3.20.0",
+"fpdf~=1.7.2",
+"seaborn~=0.13.2",
+"scikit-learn~=1.5.2",
+"matplotlib~=3.9.2",
+"numpy~=1.26.4"]
+
+
+[project.scripts]
+tcs-kedro-mnist = "tcs_kedro_mnist.__main__:main"
+
+[tool.kedro]
+package_name = "tcs_kedro_mnist"
+project_name = "TCS_Kedro_MNIST"
+kedro_init_version = "0.19.10"
+tools = "['None']"
+example_pipeline = "False"
+source_dir = "src"
+
+[project.entry-points."kedro.hooks"]
+
+[tool.setuptools.dynamic.version]
+attr = "tcs_kedro_mnist.__version__"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = false
+
+[tool.kedro_telemetry]
+project_id = "a7c168ae292f4b788006edbbfb238f24"
