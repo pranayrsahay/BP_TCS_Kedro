@@ -4,8 +4,8 @@ This repository uses Kedro framework to train and deploy ML based classification
 
 It contains the following implementations of the ML training pipeline using Kedro Framework:
 
-    Deep Learning based CNN Model, trained on MNIST dataset (based on numpy format)
-    SKLearn based classification Model, trained on MNIST dataset (based on csv dataset)
+    1. Deep Learning based CNN Model, trained on MNIST dataset (based on numpy format)
+    2. SKLearn based classification Model, trained on MNIST dataset (based on csv dataset)
 
 Each folder contains 2 sub-folders, one having the entire projects files and the other containing the Kedro package.
 
