@@ -68,6 +68,10 @@ Before installing and running the project, ensure you have the following:
 
     This command will download and install all the necessary Python packages listed in the `requirements.txt` file into your virtual environment.
 
+4. **Download MNIST data form the following link and store the cvs files in data/01_raw folder
+
+   https://www.kaggle.com/datasets/oddrationale/mnist-in-csv
+
 ## Installation
 
     Install the Kedro project from the `.whl` file using `pip`:
