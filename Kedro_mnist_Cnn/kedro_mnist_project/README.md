@@ -72,6 +72,8 @@ The project implements 3 Kedro pipelines for the overall ML implementation
 
 	1. predict_user_defined: This nodes takes the best trained model, x_test_normalized (normalized test data) as inputs. The user is prompted to provide the testset index that is to be predicted. The model does the inference on the given test set index and returns the output of the model on the console. Optionally, a user can define the test index to be predicted in conf\deployment.yml  and proceed with the inference part.
 
+Note: These pipelines need to run in a sequential order as defined above to maintain data intergrity.
+
 ## Project Execution
 
 To run the entire project, execute the following command to run all the 3 pipeline in sequence
