@@ -25,7 +25,7 @@ This repository contains a Kedro project for classifying handwritten digits usin
 
 Before you begin, ensure you have met the following requirements:
 
-- Python 3.7 or higher
+- Python 3.10 
 - pip (Python package installer)
 
 ## Installation
@@ -51,6 +51,10 @@ Before you begin, ensure you have met the following requirements:
 
     ```bash
         pip install -r requirements.txt
+    
+4. **Download MNIST data form the following link    
+    https://www.kaggle.com/datasets/oddrationale/mnist-in-csv
+    
 
 ## Running the Project
 
