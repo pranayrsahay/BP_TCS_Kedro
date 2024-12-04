@@ -39,7 +39,7 @@ Please follow the steps to deploy the project on your local environment
 
 The required dependencies are listed in `requirements.txt` 
 
-To install them, run within the newly create environment: 
+To install them, navigate to the project folder and run within the newly create environment: 
 
 ```
 pip install -r requirements.txt
