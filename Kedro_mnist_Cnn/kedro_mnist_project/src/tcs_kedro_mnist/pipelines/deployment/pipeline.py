@@ -11,7 +11,7 @@ def create_pipeline(**kwargs) -> Pipeline:
     return pipeline([
         node(
             func=predict_user_defined,
-            inputs = ["x_test_normalized", "best_trained_model", "params:user_test_index"],
+            inputs = ["x_test_normalized", "y_test", "best_trained_model", "params:user_test_index"],
             outputs=None,
             name = "predict"
         ),
