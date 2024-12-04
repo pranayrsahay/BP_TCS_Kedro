@@ -10,7 +10,6 @@ Before installing and running the project, ensure you have the following:
 
 1.  **Project Files:**
     *   A `.whl` file (the Python distribution package for the project).
-    *   A `conf` directory containing project configuration files.
     *   A `data` directory containing the necessary data (in this case, likely MNIST image data).
     *   A `conf-<package_name>.tar.gz` file containing the packaged configuration.
     *   A `requirements.txt` file listing the project's dependencies.
