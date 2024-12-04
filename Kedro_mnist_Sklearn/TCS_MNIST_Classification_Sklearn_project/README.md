@@ -52,7 +52,7 @@ Before you begin, ensure you have met the following requirements:
     ```bash
         pip install -r requirements.txt
     
-4. **Download MNIST data form the following link    
+4. **Download MNIST data form the following link and store the cvs files in data/01_raw folder
     https://www.kaggle.com/datasets/oddrationale/mnist-in-csv
     
 
