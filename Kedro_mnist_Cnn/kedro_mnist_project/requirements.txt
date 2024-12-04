@@ -8,3 +8,5 @@ kedro~=0.19.10
 keras~=2.8.0
 matplotlib~=3.9.2
 scikit-learn~=1.5.2
+seaborn~=0.13.2
+fpdf~=1.7.2
